@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f7;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #da9100;
+    color: #111184;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.institute {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.home-button {
+    display: inline-block;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+.home-button:hover {
+    background: white;
+    color: black;
+}
+
+.container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 35px auto;
+    text-align: center;
+    flex: 1;
+}
+
+.container h2 {
+    color: #073b2a;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.certificate-container {
+    background: #fff;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.certificate-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.download-button {
+    display: inline-block;
+    background: #da9100;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.download-button:hover {
+    background: #065f3e;
+}
+
+.footer {
+    background: #da9100;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 15px;
+    }
+
+    .institute {
+        gap: 10px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .header h1 {
+        font-size: 17px;
+    }
+
+    .home-button {
+        padding: 9px 14px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .container h2 {
+        font-size: 23px;
+    }
+
+    .certificate-container {
+        padding: 5px;
+    }
+
+    .download-button {
+        display: block;
+        width: 100%;
+        padding: 14px 10px;
+    }
+}
+
+
+.credentials {
+    margin: 35px 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #dce5e0;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.credentials h2 {
+    color: #073b2a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.credentials-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.credentials-list {
+    border-top: 1px solid #e5ebe7;
+}
+
+.credential-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #e5ebe7;
+}
+
+.label {
+    color: #64716a;
+    font-size: 14px;
+    flex: 1;
+}
+
+.value {
+    color: #172b21;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.status {
+    color: #087f52;
+    background: #e6f6ed;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.verification-note {
+    margin-top: 22px;
+    padding: 15px;
+    background: #f0f7f3;
+    border-left: 4px solid #087f52;
+    border-radius: 4px;
+}
+
+.verification-note strong {
+    display: block;
+    color: #073b2a;
+    margin-bottom: 7px;
+}
+
+.verification-note p {
+    color: #4d5c53;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .credentials {
+        padding: 16px;
+        margin: 25px 0;
+    }
+
+    .credentials h2 {
+        font-size: 21px;
+    }
+
+    .credential-item {
+        gap: 12px;
+    }
+
+    .label,
+    .value {
+        font-size: 13px;
+    }
+}
+
